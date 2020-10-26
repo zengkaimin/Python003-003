@@ -9,10 +9,10 @@ def timer(func):
     return inner
 
 @timer
-def diy_sum(*args,**kargs):
+def my_sum(*args,**kargs):
     result=0
     for i in args:
         result+=sum(i)
     return result
 
-diy_sum(list((range(100))))
+my_sum(list((range(100))))
